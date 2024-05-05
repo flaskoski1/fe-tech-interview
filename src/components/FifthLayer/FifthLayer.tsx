@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ReusableCard } from "./ReusableCard";
+import { ReusableCard } from "../ReusableComponents/ReusableCard";
 import image from "/public/assets/image.png";
 import image_1 from "/public/assets/image_1.png";
 import image_2 from "/public/assets/image_2.png";

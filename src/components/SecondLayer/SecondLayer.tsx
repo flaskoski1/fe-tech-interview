@@ -1,4 +1,4 @@
-import { DescTypo, TextTypo, TitleTypo } from "./MainBackground";
+import { DescTypo, TextTypo, TitleTypo } from "../FirstLayer/MainBackground";
 
 import { Button } from "@mui/material";
 import { FC } from "react";

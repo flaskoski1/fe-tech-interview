@@ -1,4 +1,4 @@
-import { DescTypo, TextTypo, TitleTypo } from "./MainBackground";
+import { DescTypo, TextTypo, TitleTypo } from "../FirstLayer/MainBackground";
 
 import { FC } from "react";
 import styled from "@emotion/styled";

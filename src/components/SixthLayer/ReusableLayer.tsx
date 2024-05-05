@@ -1,4 +1,4 @@
-import { DescTypo, TitleTypo } from "./MainBackground";
+import { DescTypo, TitleTypo } from "../FirstLayer/MainBackground";
 import Image, { StaticImageData } from "next/image";
 
 import { FC } from "react";

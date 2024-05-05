@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 import CREON from "/public/assets/CREON.png";
 import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
-import { ReusableMenuItem } from "./ReusableMenuItem";
+import { ReusableMenuItem } from "../ReusableComponents/ReusableMenuItem";
 import Vector from "/public/assets/Vector.png";
 import frameIcons from "/public/assets/frameIcons.png";
 import styled from "@emotion/styled";

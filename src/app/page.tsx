@@ -1,13 +1,13 @@
 "use client";
 
-import { FifthLayer } from "../components/FifthLayer";
-import { FourthLayer } from "../components/FourthLayer";
-import { Header } from "../components/Header";
+import { FifthLayer } from "../components/FifthLayer/FifthLayer";
+import { FourthLayer } from "../components/FourthLayer/FourthLayer";
+import { Header } from "../components/FirstLayer/Header";
 import Image from "next/image";
-import { MainBackground } from "../components/MainBackground";
-import { SecondLayer } from "../components/SecondLayer";
-import { SixthLayer } from "../components/SixthLayer";
-import { ThirdLayer } from "../components/ThirdLayer";
+import { MainBackground } from "../components/FirstLayer/MainBackground";
+import { SecondLayer } from "../components/SecondLayer/SecondLayer";
+import { SixthLayer } from "../components/SixthLayer/SixthLayer";
+import { ThirdLayer } from "../components/ThirdLayer/ThirdLayer";
 import copyrights from "/public/assets/copyrights.png";
 import frameIcons from "/public/assets/frameIcons.png";
 import niftables from "/public/assets/niftables.png";

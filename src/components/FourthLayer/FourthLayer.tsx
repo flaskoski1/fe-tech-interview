@@ -1,7 +1,7 @@
-import { ExpandableList } from "./ExpandableList";
+import { ExpandableList } from "../ReusableComponents/ExpandableList";
 import { FC } from "react";
 import Image from "next/image";
-import { TitleTypo } from "./MainBackground";
+import { TitleTypo } from "../FirstLayer/MainBackground";
 import creonImage from "/public/assets/creonImage.png";
 import styled from "@emotion/styled";
 
