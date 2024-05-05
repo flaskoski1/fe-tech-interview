@@ -32,13 +32,9 @@ export const SixthLayer: FC = () => {
         />
       </div>
       <StyledDiv
+        className="text-white flex justify-center flex-row items-center"
         style={{
           width: "85%",
-          color: "white",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "row",
-          alignItems: "center",
         }}
       >
         <ReusableLayer

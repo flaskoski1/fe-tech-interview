@@ -42,7 +42,7 @@ export const ReusableCollapsableItem: React.FC<CollapsibleListItemProps> = ({
     <>
       <ListItemButton onClick={handleClick}>
         <ListItemIcon>
-          <StlImage src={icon} alt="photo" />
+          <StlImage src={icon} alt="photo" loading="lazy" />
         </ListItemIcon>
         <ListItemText>
           <StlTitle>{title}</StlTitle>

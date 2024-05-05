@@ -32,11 +32,12 @@ export default function Home() {
               height={20}
               alt="photo"
               className="ml-12"
+              loading="lazy"
               // style={{ marginLeft: "15%" }}
             />
           </InnerDiv>
           <ImageWrapper>
-            <Image src={niftables} height={20} alt="photo" />
+            <Image src={niftables} height={20} alt="photo" loading="lazy" />
           </ImageWrapper>
         </OutterDiv>
       </StyledFooter>

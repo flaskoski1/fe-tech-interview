@@ -3,6 +3,7 @@ import Image, { StaticImageData } from "next/image";
 
 import { FC } from "react";
 import comingSoon from "/public/assets/comingSoon.png";
+import styled from "@emotion/styled";
 
 interface ReusableComponentProps {
   title: string;
@@ -20,7 +21,7 @@ export const ReusableCard: FC<ReusableComponentProps> = ({
   return (
     <>
       <div className="flex justify-end w-full">
-        <Image src={comingSoon} alt="photo" />
+        <StyledImage src={comingSoon} alt="photo" loading="lazy" />
       </div>
       <div>
         <TitleTypo>{title}</TitleTypo>
@@ -38,9 +39,15 @@ export const ReusableCard: FC<ReusableComponentProps> = ({
         </TextTypo>
       </div>
       <div style={{ paddingTop: "3vh" }}>
-        <Image src={imageUrl} alt="photo" />
+        <Image src={imageUrl} alt="photo" loading="lazy" />
         <DescTypo style={{ paddingTop: "2vh" }}>{description}</DescTypo>
       </div>
     </>
   );
 };
+
+const StyledImage = styled(Image)`
+  @media (max-width: 1000px) {
+    width: 40px;
+  }
+`;

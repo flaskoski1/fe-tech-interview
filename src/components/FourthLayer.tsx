@@ -24,10 +24,15 @@ export const FourthLayer: FC = () => {
   );
 
   return (
-    <div className="relative h-full bg-black w-full h-full flex justify-evenly items-center">
+    <div className="relative h-full bg-black w-full flex justify-evenly">
       <LeftContainer className="text-white flex justify-center flex-col w-2/5">
         {textCombined}
-        <Image src={creonImage} sizes="40vw" alt="Picture of the author" />
+        <Image
+          src={creonImage}
+          sizes="40vw"
+          alt="Picture of the author"
+          loading="lazy"
+        />
       </LeftContainer>
       <RightContainer className="text-white h-full">
         <ResponsiveContainer>
@@ -39,13 +44,11 @@ export const FourthLayer: FC = () => {
 };
 
 const LeftContainer = styled.div`
-  height: 80vh;
-  word-wrap: break-word;
   @media (max-width: 1000px) {
-    height: 40vh;
-  }
-  @media (max-width: 500px) {
-    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-content: flex-start;
+    padding-top: 10%;
   }
 `;
 

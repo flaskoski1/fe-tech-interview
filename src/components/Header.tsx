@@ -57,7 +57,7 @@ const MobileMenu: FC<{ isOpen: boolean; toggleMenu: () => void }> = ({
       </ul>
     </div>
     <div className="p-4 ml-8">
-      <Image src={frameIcons} alt="photo" />
+      <Image src={frameIcons} alt="photo" loading="lazy" />
     </div>
   </div>
 );
@@ -95,9 +95,21 @@ export const Header: FC = () => {
         }`}
       >
         <div className="flex items-center">
-          <Image src={Vector} width={25} height={15} alt="Vector" />
+          <Image
+            src={Vector}
+            width={25}
+            height={15}
+            alt="Vector"
+            loading="lazy"
+          />
           <div className="ml-2">
-            <Image src={CREON} width={60} height={60} alt="CREON" />
+            <Image
+              src={CREON}
+              width={60}
+              height={60}
+              alt="CREON"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ export const ReusableLayer: FC<ReusableComponentProps> = ({
           marginLeft: "5%",
         }}
       >
-        <Image src={imageUrl} height={200} alt="photo" />
+        <Image src={imageUrl} height={200} alt="photo" loading="lazy" />
       </div>
     </>
   );
