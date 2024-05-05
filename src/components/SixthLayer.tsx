@@ -3,6 +3,7 @@ import { ReusableLayer } from "./ReusableLayer";
 import image_5 from "/public/assets/image_5.png";
 import image_6 from "/public/assets/image_6.png";
 import image_7 from "/public/assets/image_7.png";
+import styled from "@emotion/styled";
 
 export const SixthLayer: FC = () => {
   return (
@@ -16,7 +17,6 @@ export const SixthLayer: FC = () => {
         className="text-white flex justify-center flex-row items-center"
         style={{
           width: "85%",
-          height: "20vh",
         }}
       >
         <ReusableLayer
@@ -31,16 +31,14 @@ export const SixthLayer: FC = () => {
             sectors such a healthcare, finance and transportation."
         />
       </div>
-      <div
+      <StyledDiv
         style={{
           width: "85%",
-          height: "20vh",
           color: "white",
           display: "flex",
           justifyContent: "center",
           flexDirection: "row",
           alignItems: "center",
-          marginTop: "5vh",
         }}
       >
         <ReusableLayer
@@ -48,13 +46,11 @@ export const SixthLayer: FC = () => {
           title="AI TOOLS AND MARKET"
           description="AI tools refer to the technologies and software that enable computer systems to perform tasks usually requiring human intellect. The market for these tools is dynamic and diverse, encompassing areas such as Natural Language Processing (NLP), machine learning, computer vision and robotics. With a wide range of applications, AI tools are becoming icreasingly indispensable in many sectors, from healthcare to finance, retail, manufacturing, and many others."
         />
-      </div>
-      <div
+      </StyledDiv>
+      <StyledDiv
         className="text-white flex flex-row items-center justify-centerl"
         style={{
-          marginTop: "5vh",
           width: "85%",
-          height: "20vh",
         }}
       >
         <ReusableLayer
@@ -62,7 +58,17 @@ export const SixthLayer: FC = () => {
           title="AI, CRYPTO, AND NFT MARKET"
           description="Artifical Intelligence and blockchaing technology are two groundbreaking areas leading new technological innovations. The combination of these two technologies creates intriguing possibilites. For instance, Non-Fungible Tokens (NFTs) can leverage AI to create unique digital artworks or to provide exclusive AI-based services. Meanwhile, cryptocurrencies can benefit from AI by improving security mechanisms, transaction effiecency, and service personalization. Such combination brings substantial benefits for both developers and users, paving the way for unprecedented possibilites."
         />
-      </div>
+      </StyledDiv>
     </div>
   );
 };
+
+const StyledDiv = styled.div`
+  margin-top: 5vh;
+  @media (max-width: 1000px) {
+    margin-top: 3vh;
+  }
+  @media (max-width: 500px) {
+    margin-top: 1vh;
+  }
+`;

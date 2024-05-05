@@ -71,6 +71,6 @@ const ResponsiveContainer = styled.div`
     height: 40vh;
   }
   @media (max-width: 500px) {
-    height: 30vh;
+    height: 40vh;
   }
 `;

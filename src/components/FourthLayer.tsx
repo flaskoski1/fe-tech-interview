@@ -55,10 +55,4 @@ const RightContainer = styled.div`
 
 const ResponsiveContainer = styled.div`
   height: 60vh;
-  @media (max-width: 1000px) {
-    height: 40vh;
-  }
-  @media (max-width: 500px) {
-    height: 20vh;
-  }
 `;

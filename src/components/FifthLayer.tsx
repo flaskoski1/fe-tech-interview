@@ -53,6 +53,6 @@ const ChildDiv = styled.div`
     height: 50vh;
   }
   @media (max-width: 500px) {
-    height: 30vh;
+    height: 45vh;
   }
 `;
